@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  --main-bg-color: #f5f5f5;
+  --main-variation-bg-color: #d9d9d9;
+  --secondary-bg-color: #000000;
+  --main-font-color: #eeeeee;
+  --secondary-font-color: #000000;
+  --h1-font-size: 40px;
+  --h2-font-size: 40px;
+  --h3-font-size: 50px;
+  --h4-font-size: 30px;
+  --h5-font-size: 20px;
+  --h1-mobile-font-size: 30px;
+  --h2-mobile-font-size: 30px;
+  --h3-mobile-font-size: 25px;
+  --h4-mobile-font-size: 20px;
+  --h5-mobile-font-size: 15px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #eceff1;
+}
+
+#banner-header-wrapper {
+  background-color: var(--secondary-bg-color);
+  padding: 10px 0;
+}
+
+#banner-text {
+  color: var(--main-font-color);
+  text-align: center;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+nav {
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo-header {
+  width: 60px;
+  cursor: pointer;
+}
+
+#menu-principal {
+  display: flex;
+  gap: 10px;
+  @media (max-width: 800px) {
+    display: none;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-font-color);
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+#menu-img-mobile {
+  @media (min-width: 800px) {
+    display: none;
+  }
+}
+
+.material-symbols-outlined {
+  cursor: pointer;
+}
+
+main {
+  padding: 40px 40px;
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+  font-style: italic;
+  @media (max-width: 800px) {
+    font-size: var(--h1-mobile-font-size);
+  }
+}
+
+#text-under-title {
+  max-width: 780px;
+  font-size: 15px;
+}
+
+#products {
+  padding: 20px 0;
+}
+
+#products ul {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 5px;
+  @media (min-width: 600px) {
+    grid-template-columns: repeat(3, 33.33%);
+  }
+  @media (min-width: 960px) {
+    grid-template-columns: repeat(4, 25%);
+  }
+  @media (min-width: 1280px) {
+    grid-template-columns: repeat(4, 25%);
+  }
+  @media (min-width: 1600px) {
+    grid-template-columns: repeat(4, 25%);
+  }
+}
+
+#products li {
+  padding: 20px 0;
+}
+
+#products img {
+  width: 100%;
+}
+
+#products h4 {
+  margin: 10px 0;
+}
+
+#products p {
+  margin: 4px 0;
+}
+
+.text-grease {
+  color: #767677;
+}
